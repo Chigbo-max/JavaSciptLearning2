@@ -84,6 +84,23 @@ const returnArrayOfHealthyItems = (shoppingList)=>{
     })
 }
 
+const determineBuyingPatterns = (orders)=>{
+    orders = [
+        { id: 1, items: [{ price: 25, quantity: 2 }, { price: 15, quantity: 3 }] },
+        { id: 2, items: [{ price: 100, quantity: 1 }, { price: 25, quantity: 2 }] },
+        { id: 3, items: [{ price: 30, quantity: 1 }] },
+        ];
+    filteredOrders = [];
+orders.filter((lists)=>{
+    //if(lists.items.price < 100){
+        filteredOrders.push(lists)
+   // }
+   
+
+})
+return filteredOrders;
+}
+console.log(determineBuyingPatterns())
 
 
-module.exports = {returnArrayOfHealthyItems,returnStudentGrades,totalExpenses, numbersGreaterThan70, increaseStudentScoreBy5, squareNumbers, distributedBooks, identifyClasses};
+module.exports = {determineBuyingPatterns,returnArrayOfHealthyItems,returnStudentGrades,totalExpenses, numbersGreaterThan70, increaseStudentScoreBy5, squareNumbers, distributedBooks, identifyClasses};
