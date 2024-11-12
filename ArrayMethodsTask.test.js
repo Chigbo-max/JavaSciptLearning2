@@ -1,4 +1,4 @@
-const{returnArrayOfHealthyItems,returnStudentGrades,numbersGreaterThan70, increaseStudentScoreBy5, squareNumbers, distributedBooks, identifyClasses, totalExpenses} = require("./ArrayMethodsTask");
+const{determineBuyingPatterns,returnArrayOfHealthyItems,returnStudentGrades,numbersGreaterThan70, increaseStudentScoreBy5, squareNumbers, distributedBooks, identifyClasses, totalExpenses} = require("./ArrayMethodsTask");
 
 test("scores greater than or equal to 70", ()=>{
 let testScores = [20,80,50,70,40,30,90,75,35,95];
@@ -24,7 +24,12 @@ expect(result).toEqual(answer);
 test("distribute a different book to each member", ()=>{
 let members = ["Emily", "Jack", "Sophia", "Daniel"];
 let result = distributedBooks(members);
-let answer = ["tales by moonlight", "tales by sunlight", "tales by greenlight", "tales by redlight"];
+let answer =    [
+    { name: 'Emily', book: 'tales by moonlight' },
+    { name: 'Jack', book: 'tales by sunlight' },
+    { name: 'Sophia', book: 'tales by greenlight' },
+    { name: 'Daniel', book: 'tales by redlight' }
+  ]
 expect(result).toEqual(answer);
 })
 
@@ -64,4 +69,20 @@ test("return an array of healthy items",()=>{
         ]
 let result = returnArrayOfHealthyItems(shoppingList);
 let answer = ['Apples', 'Carrots', 'Greek Yoghurt']
+})
+
+test("buying patterns of customers",()=>{
+    const orders = [
+        { id: 1, items: [{ price: 25, quantity: 2 }, { price: 15, quantity: 3 }] },
+        { id: 2, items: [{ price: 100, quantity: 1 }, { price: 25, quantity: 2 }] },
+        { id: 3, items: [{ price: 30, quantity: 1 }] },
+        ];
+        let result = determineBuyingPatterns(orders);
+        let answer = [{id: 1, items: [{totalPrice: 95}]}, {id: 2, items: [{totalPrice: 150}]}, {id: 3, items: [{totalPrice: 30}]}];
+        expect(result).toEqual(answer);
+
+
+    
+
+
 })

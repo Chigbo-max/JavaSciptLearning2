@@ -13,11 +13,15 @@ const squareNumbers = function(numbers){
     return result;
 }
 
-const distributedBooks = ()=>{
+const distributedBooks = (members)=>{
+    members = ["Emily", "Jack", "Sophia", "Daniel"];
+    let books = ["tales by moonlight", "tales by sunlight", "tales by greenlight", "tales by redlight"];
     const newArray = [];
-    let answer = ["tales by moonlight", "tales by sunlight", "tales by greenlight", "tales by redlight"];
-    for (const members of answer){
-         newArray.push(members);
+    for(let index = 0; index < members.length; index++){
+        bookClubMembers = {name: members[index],
+                            book: books[index]
+        }
+         newArray.push(bookClubMembers);
     }
     return newArray;
 }
@@ -79,5 +83,7 @@ const returnArrayOfHealthyItems = (shoppingList)=>{
         return healthyItems;
     })
 }
+
+
 
 module.exports = {returnArrayOfHealthyItems,returnStudentGrades,totalExpenses, numbersGreaterThan70, increaseStudentScoreBy5, squareNumbers, distributedBooks, identifyClasses};
