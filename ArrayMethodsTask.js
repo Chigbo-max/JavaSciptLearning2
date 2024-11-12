@@ -24,14 +24,12 @@ const distributedBooks = ()=>{
 
 function identifyClasses(classTimings){
     const array = [];
-    for(let elements of classTimings){
+    classTimings.map((elements)=>{
         let splittedTime = elements.slice(5);
         if(splittedTime === "PM"){
             array.push(elements)
-    }
- //classTimings.filter((timings)=>timings > );
-
-}
+    }commit 
+})
 return array;
 
 }
