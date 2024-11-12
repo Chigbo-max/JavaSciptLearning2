@@ -28,7 +28,7 @@ function identifyClasses(classTimings){
         let splittedTime = elements.slice(5);
         if(splittedTime === "PM"){
             array.push(elements)
-    }commit 
+    }
 })
 return array;
 
@@ -67,4 +67,17 @@ const returnStudentGrades = (array)=>{
 
 }
 
-module.exports = {returnStudentGrades,totalExpenses, numbersGreaterThan70, increaseStudentScoreBy5, squareNumbers, distributedBooks, identifyClasses};
+const returnArrayOfHealthyItems = (shoppingList)=>{
+    let healthyItems = []
+    shoppingList.filter((lists)=>{
+    if(lists.isHealthy == true){
+        healthyItems.push(lists.name)
+
+         }
+    })
+    healthyItems.forEach(()=>{
+        return healthyItems;
+    })
+}
+
+module.exports = {returnArrayOfHealthyItems,returnStudentGrades,totalExpenses, numbersGreaterThan70, increaseStudentScoreBy5, squareNumbers, distributedBooks, identifyClasses};

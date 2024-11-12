@@ -1,4 +1,4 @@
-const{returnStudentGrades,numbersGreaterThan70, increaseStudentScoreBy5, squareNumbers, distributedBooks, identifyClasses, totalExpenses} = require("./ArrayMethodsTask");
+const{returnArrayOfHealthyItems,returnStudentGrades,numbersGreaterThan70, increaseStudentScoreBy5, squareNumbers, distributedBooks, identifyClasses, totalExpenses} = require("./ArrayMethodsTask");
 
 test("scores greater than or equal to 70", ()=>{
 let testScores = [20,80,50,70,40,30,90,75,35,95];
@@ -51,4 +51,17 @@ test("return studen grades", ()=>{
     let result = returnStudentGrades(studentScores);
     let answer = ["A","C","B","D","F","A"];
     expect(result).toEqual(answer);
+})
+
+test("return an array of healthy items",()=>{
+    const shoppingList = [
+        { name: 'Apples', category: 'Fruits', isHealthy: true },
+        { name: 'Potato Chips', category: 'Snacks', isHealthy: false },
+        { name: 'Carrots', category: 'Vegetables', isHealthy: true },
+        { name: 'Chocolate Bars', category: 'Sweets', isHealthy: false },
+        { name: 'Greek Yogurt', category: 'Dairy', isHealthy: true },
+        { name: 'Soda', category: 'Beverages', isHealthy: false }
+        ]
+let result = returnArrayOfHealthyItems(shoppingList);
+let answer = ['Apples', 'Carrots', 'Greek Yoghurt']
 })
