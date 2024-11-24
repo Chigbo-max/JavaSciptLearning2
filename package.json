@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "jest": "^29.7.0"
+  },
+  "name": "javascript2",
+  "version": "1.0.0",
+  "main": "ArrayMethodsTask.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
+
