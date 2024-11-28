@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    
+}
+
+.mainWrapper{
+    width: 100vw;
+    /* vw means view width */
+    /* margin auto gives the general body a margin that gives both ends a space, as the browser is reduced, the space adjusts automatically without shrinking */
+    margin: auto;
+}
+
+/* use px for border radius  */
+/* get open in browser and live view */
+
+/* take off the bullets */
+ul{
+    list-style: none;
+    /* to make the text appear horizontal */
+    /* try gap */
+    display: flex;
+    /* to give it a width */
+    width: 500px;
+    /* align the height instead of using margin-top */
+    height: 50px;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.navBar{
+    /* to make the nav bar horizontal */
+    display: flex;
+    /* to put space around */
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+/* to target ul and li */
+ul li a{
+    text-decoration: none;
+    color: #ddd;
+}
+.login{
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+}
+.textContainer h1{
+    color: #ce9898;
+    font-size: 64px;
+    font-weight: light;
+    letter-spacing:17px;
+    line-height: 64px;
+
+}
+/* install color picker , dark reader and font picker extension from your chrome browser */
+
+.textContainer h2{
+    color: #ddd;
+    font-size: 64px;
+    line-height: 71px;
+    font-weight:bold;
+    letter-spacing: 17px;
+
+}
+/* instead of using br to break, use the container width (example-COMING SOON) */
+
+.textContainer{
+    width: 445px;
+}
+
+.heroPage{
+    display:flex;
+    /* learn how touse grid */
+}
+
+.imageContainer img{
+    width: 610px;
+    height: 800px;
+}
