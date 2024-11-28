@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.mainWrapper{
+    width: 90vw;
+    margin: auto;
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    height: 50px;
+    width: 500px;
+    justify-content: space-between;
+    align-items: center;
+}
+ul li a{
+    text-decoration: none;
+    color:black;
+}
+
+.login{
+    display: flex;
+    justify-content: space-between;
+    width:150px;
+}
+
+.heroPage{
+    display:flex;
+}
+
+.textContainer{
+    width: 445px;
+}
+.textContainer h2{
+    font-size: 64px;
+    font-weight:light;
+    letter-spacing: 17.32px;
+    line-height: 64px;
+    color: #ce9898;
+}
+
+.textContainer h3{
+    font-size: 64px;
+    font-weight:bold;
+    letter-spacing: 17.32px;
+    line-height: 71px;
+    color: #000000;
+}
+
+.imageContainer img{
+    height:800px;
+    width: 610px;
+}
