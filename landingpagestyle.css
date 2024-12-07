@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'cairo';
+    src: url('./fontCairo/cairo-2-webfont/Cairo-Regular.woff');
+}
+
+
+
 *{
     margin:0;
     padding:0;
@@ -14,17 +21,17 @@ body{
     height: 100vh;
     overflow-y: scroll;
     background-color: aliceblue;
-
-
+    font-family: 'cairo', sans-serif;
 }
+
 body::-webkit-scrollbar{
     display: none;
 }
 
 .line{
-    height: 4010px;
-    border-left: 2px solid #8E8E8E;
-    border-right: 2px solid #8E8E8E;
+    height: 4100px;
+    border-left: 1px solid #C9C9C9;
+    border-right: 1px solid #C9C9C9;
 }
 
 .navBar{
@@ -46,6 +53,12 @@ ul{
 
 ul li a{
     text-decoration: none;
+    color:black;
+}
+
+ul li a span{
+    font-weight: bold;
+    text-decoration:overline;
     color:black;
 }
 
@@ -188,6 +201,11 @@ h4{
     background-color: #ffff;
 }
 
+.specialHelpButtonContainer button:hover{
+    background-color: black;
+    color:white;
+}
+
 .formContainer{
     border-style:solid;
     border-width: 1px;
@@ -228,6 +246,12 @@ h4{
 }
 
 input{
+    width: 530px;
+    height: 50px;
+    border: 1px;
+}
+
+select{
     width: 530px;
     height: 50px;
     border: 1px;
