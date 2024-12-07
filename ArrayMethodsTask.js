@@ -28,7 +28,7 @@ const distributedBooks = (members)=>{
 
 function identifyClasses(classTimings){
     const array = [];
-    classTimings.map((elements)=>{
+    classTimings.filter((elements)=>{
         let splittedTime = elements.slice(5);
         if(splittedTime === "PM"){
             array.push(elements)

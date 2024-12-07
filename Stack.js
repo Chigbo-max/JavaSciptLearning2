@@ -54,6 +54,8 @@ class Queue {
         this.isEmpty = false;
         this.count = 0;
         this.item = 0;
+        this.firstNumber = 0;
+
     }
 
     enqueue(item){
@@ -61,10 +63,11 @@ class Queue {
     }
 
     dequeue(){
-     this.item = this.items[this.count - 1];
-     this.count++;
-     this.items[this.items.length] = this.count;
-     return this.items;
+     for(let  i = 0; i < this.items.length - 1; i++){
+         this.items[i] = this.items[i + 1];
+     }
+     this.items.length--;
+     return this.item;
     }
 
     getItems(){
@@ -72,7 +75,8 @@ class Queue {
     }
 
     front(){
-
+        this.item = this.items[this.firstNumber];
+        return this.item;
     }
 
     isEmpty(){
@@ -84,4 +88,44 @@ class Queue {
     }
 
 }
-module.exports = {Stack, Queue};
+
+class Array{
+
+    filterUnqualifiedPeople(people){
+        let unqualifiedCandidates = []
+        people.filter((elements)=>{
+            if (elements.age < 18 || elements.voterID === false){
+                unqualifiedCandidates.push(elements);
+            }
+        })
+        return unqualifiedCandidates;
+    }
+
+    filterJobs(jobs) {
+        let filteredJobs = [];
+        jobs.filter((elements)=>{
+            if (elements.salary < 60000 || elements.location !== "New York"){
+                filteredJobs.push(elements);
+            }
+        })
+        return filteredJobs;
+    }
+
+    sumOfNumberOfBooksBorrowed(listOfNumberOfBooksBorrowed) {
+        let initialValue = 0;
+        return listOfNumberOfBooksBorrowed.reduce((accumulator, currentValue) => accumulator + currentValue, initialValue
+        );
+    }
+
+    calculateTotalExpenses(listOfExpenses) {
+        let listOfAmount = [];
+        listOfExpenses.filter((element)=>{
+            if(element.amount >= 0){
+                listOfAmount.push(element.amount);
+            }
+        })
+        let initialValue = 0;
+        return listOfAmount.reduce((accumulator, currentValue)=>accumulator + currentValue, initialValue)
+    }
+}
+module.exports = {Stack, Queue, Array};
