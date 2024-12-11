@@ -80,9 +80,17 @@ test("buying patterns of customers",()=>{
         let result = determineBuyingPatterns(orders);
         let answer = [{id: 1, items: [{totalPrice: 95}]}, {id: 2, items: [{totalPrice: 150}]}, {id: 3, items: [{totalPrice: 30}]}];
         expect(result).toEqual(answer);
-
-
-    
-
-
 })
+
+const findMostExpensiveItem = (users)=>{
+    const mostExpensiveItem = users.reduce((maxItem, user)=>{
+        const highestPurchase = user.purchases.reduce((max, purchase) => {
+                return purchase.price > max.price ? purchase : max;
+            },
+            {price:0});
+        return highestPurchase.price > maxItem.price ? highestPurchase : maxItem;
+    }, {price:0});
+
+    return mostExpensiveItem;
+
+};

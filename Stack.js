@@ -83,10 +83,6 @@ class Queue {
         return this.isEmpty;
     }
 
-    getItem(){
-        return this.item;
-    }
-
 }
 
 class Array{
