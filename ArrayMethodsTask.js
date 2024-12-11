@@ -84,6 +84,19 @@ const returnArrayOfHealthyItems = (shoppingList)=>{
     })
 }
 
+const findMostExpensiveItem = (users)=>{
+    const mostExpensiveItem = users.reduce((maxItem, user)=>{
+        const highestPurchase = user.purchases.reduce((max, purchase) => {
+                return purchase.price > max.price ? purchase : max;
+            },
+            {price:0});
+        return highestPurchase.price > maxItem.price ? highestPurchase : maxItem;
+    }, {price:0});
+
+    return mostExpensiveItem;
+
+};
+
 const determineBuyingPatterns = (orders)=>{
     orders = [
         { id: 1, items: [{ price: 25, quantity: 2 }, { price: 15, quantity: 3 }] },

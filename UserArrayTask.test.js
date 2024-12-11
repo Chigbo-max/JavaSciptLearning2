@@ -1,4 +1,4 @@
-const {determineUsersAboveAge28, findMostExpensiveItem} = require("./UserArrayTask");
+const {determineUsersAboveAge28, findMostExpensiveItem, calculateTotalSpent, returnNameAndTotalSpent} = require("./UserArrayTask");
 
 test("return names of uses above the age of 28 in an array",()=>{
     const users = [
@@ -51,5 +51,46 @@ test("return most expensive purchased item",()=>{
 
     let result = findMostExpensiveItem(users);
     let answers = 'Laptop';
+    expect(result).toEqual(answers)
+});
+
+test("return new property totalSpent for each user",()=>{
+    const users = [
+        {
+            id: 1,
+            name: 'Alice',
+            age: 25,
+            purchases: [ { item: 'Laptop', price: 1200 },{ item: 'Phone', price: 800 } ]
+        },
+
+    ]
+
+    let result = calculateTotalSpent(users);
+    let answers =  [{
+        id: 1,
+        name: 'Alice',
+        age: 25,
+        purchases: [{item: 'Laptop', price: 1200}, {item: 'Phone', price: 800}],
+        totalSpent: 2000
+    }]
+
+expect(result).toEqual(answers)
+
+});
+
+test("return an array of objects containing only name and totalSpent",()=> {
+    const users = [{
+        id: 1,
+        name: 'Alice',
+        age: 25,
+        purchases: [{item: 'Laptop', price: 1200}, {item: 'Phone', price: 800}],
+        totalSpent: 2000
+    }];
+
+    let result = calculateTotalSpent(users);
+    let answers =  [{
+        name:'Alice',
+        totalSpent: 2000
+    }]
     expect(result).toEqual(answers)
 });

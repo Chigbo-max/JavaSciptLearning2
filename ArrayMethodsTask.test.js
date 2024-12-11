@@ -51,7 +51,7 @@ test("total amount spent on expenses",()=>{
     expect(result).toBe(answer);
 })
 
-test("return studen grades", ()=>{
+test("return student grades", ()=>{
     const studentScores = [95, 78, 85, 60, 45, 92];
     let result = returnStudentGrades(studentScores);
     let answer = ["A","C","B","D","F","A"];
@@ -82,15 +82,4 @@ test("buying patterns of customers",()=>{
         expect(result).toEqual(answer);
 })
 
-const findMostExpensiveItem = (users)=>{
-    const mostExpensiveItem = users.reduce((maxItem, user)=>{
-        const highestPurchase = user.purchases.reduce((max, purchase) => {
-                return purchase.price > max.price ? purchase : max;
-            },
-            {price:0});
-        return highestPurchase.price > maxItem.price ? highestPurchase : maxItem;
-    }, {price:0});
 
-    return mostExpensiveItem;
-
-};

@@ -22,4 +22,27 @@ const findMostExpensiveItem = (users)=>{
 
 };
 
-module.exports = {determineUsersAboveAge28, findMostExpensiveItem};
+const calculateTotalSpent = (users)=>{
+    const newUserDetails = users.map(user=>{
+        const totalSpent = user.purchases.reduce((total, currentPurchase)=>{total += currentPurchase.price; return total; },0);
+
+    return{
+        // ...user,
+        name: user.name,
+        totalSpent
+    }
+    })
+    return newUserDetails;
+};
+
+const returnNameAndTotalSpent = (users)=>{
+    const newUserDetails = users.map(user=>{
+        return{
+            name:user.name,
+            totalSpent: user.totalSpent
+        };
+    })
+    return newUserDetails;
+};
+
+module.exports = {determineUsersAboveAge28, findMostExpensiveItem, calculateTotalSpent, returnNameAndTotalSpent};
