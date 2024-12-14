@@ -1,11 +1,11 @@
 
-const{returnTheModulusOfFive, getValueOfCharacter, getEncryptedModulusValueForEachCharacter, getEncryptedResult, getDecryptedModulusValueForEachCharacter, getDecryptedResult } = require("./EncryptionAndDecryption");
+const{returnTheModulus, getValueOfCharacter, getEncryptedModulusValueForEachCharacter, getEncryptedResult, getDecryptedModulusValueForEachCharacter, getDecryptedResult } = require("./EncryptionAndDecryption");
 
 
-test("testThat5Modulus26Returns5",()=>{
+test("testThat5Modulus26Returns8",()=>{
     const number = 5;
-    let actual = returnTheModulusOfFive(number);
-    let expected = 5;
+    let actual = returnTheModulus(number);
+    let expected = 8;
     expect(actual).toBe(expected);
 })
 
@@ -21,8 +21,9 @@ test("testThatTheNumericValueForCharacterIsReturned",()=>{
 
 test("testThatExceptionIsThrowForNonLetter",()=>{
     const plainText = "CALIFOR32A";
-    let errorMessage = "Invalid Character"
-    expect(() => getValueOfCharacter(plainText)).toThrowError(errorMessage);
+    let actual = getValueOfCharacter(plainText)
+    let expected = [2, 0, 11, 8, 5, 14, 17, 0]
+    expect(actual).toEqual(expected);
 })
 
 

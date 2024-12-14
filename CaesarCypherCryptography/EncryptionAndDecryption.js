@@ -1,32 +1,31 @@
 
 
-const returnTheModulusOfFive = (number)=>{
-    if(number < 26){
-        return number;
+const returnTheModulus = (number)=>{
+    let key = 3;
+    let value = number + key;
+    if(value < 26){
+        return value;
     }
-    else return number % 26;
+    else return value % 26;
 };
-
-
 
 
 const getValueOfCharacter = (plainText)=>{
     let result = [];
     for(let index = 0; index < plainText.length; index++){
         let character = plainText.charAt(index);
-        validateCharacter(character);
-        character = character.toLowerCase();
-        let number = character.charCodeAt(0) - 'a'.charCodeAt(0);
-        result.push(number)
+        if (isValidateCharacter(character)) {
+            character = character.toLowerCase();
+            let number = character.charCodeAt(0) - 'a'.charCodeAt(0);
+            result.push(number)
+        }
+
     }
     return result;
-
 }
 
-function validateCharacter(character) {
-    if (!/[a-zA-Z]/.test(character)) {
-        throw new Error("Invalid Character");
-    }
+function isValidateCharacter(character) {
+    return /[a-zA-Z]/.test(character);
 }
 
 const getEncryptedModulusValueForEachCharacter = (plainText)=>{
@@ -34,11 +33,12 @@ const getEncryptedModulusValueForEachCharacter = (plainText)=>{
     let characterValues = getValueOfCharacter(plainText);
     let key = 3;
     for(let index = 0; index < characterValues.length; index++) {
-        if ((characterValues[index] + key) < 26) {
-            modulusValues.push(characterValues[index] + key);
+        let value = characterValues[index] + key;
+        if ((value) < 26) {
+            modulusValues.push(value);
         }
         else{
-            modulusValues.push((characterValues[index] + key) % 26);
+            modulusValues.push((value) % 26);
         }
 
     }
@@ -90,5 +90,4 @@ function validateDecryptedModulusValue(characterValues, index, key, decryptedMod
 }
 
 
-
-module.exports = {returnTheModulusOfFive, getValueOfCharacter, getEncryptedModulusValueForEachCharacter, getEncryptedResult, getDecryptedModulusValueForEachCharacter, getDecryptedResult};
+module.exports = {returnTheModulus, getValueOfCharacter, getEncryptedModulusValueForEachCharacter, getEncryptedResult, getDecryptedModulusValueForEachCharacter, getDecryptedResult};
