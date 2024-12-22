@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.mainWrapper{
+    height:100vh;
+    width:100%;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: poppins sans-serif;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: #F9FAFB;
+
+}
+.mainWrapper::-webkit-scrollbar{
+    display: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.navBar{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    padding: 20px;
+    top:0;
+    left:0;
+    right:0;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #9EA3AE;
+}
+
+button{
+    border: none;
+    width: 134px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: #2374EE;
+    color: #fff;
+}
+
+.heroPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: url("./img/Hero Background.svg");
+}
+.heroPage::-webkit-scrollbar{
+    display: none;
+}
+
+
+.heroPage1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1400px;
+}
+
+.textContainer{
+    max-width: 600px;
+}
+.textContainer h1{
+    width: 373px;
+    height: 210px;
+    margin-left: 110px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.textContainer h4{
+    width: 441px;
+    height: 78px;
+    margin-top: 13px;
+    margin-left: 110px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26.1px;
+    color: #9EA3AE;
+    margin-bottom: 20px;
+}
+
+span{
+    color: #2374EE;
+}
+
+.freeTrial{
+    display: flex;
+    align-items: center;
+    width: 600px;
+    height: 58px;
+    margin-left: 110px;
+    margin-top: 13px;
+}
+
+.freeTrial h4{
+    margin-left: 15px;
+    margin-top: 80px;
+}
+
+.material-icons{
+    margin-left: 30px;
+    color: #2374EE;
+    cursor: pointer;
+}
+
+.imageContainer{
+    width:916px;
+    height:651px;
+    margin-top: 159px;
+    border-radius: 16px;
+    color: #F6F6F6;
+    transform: translateY(5%);
+    /*z-index: 2;*/
+}
+/*.imageContainer img{*/
+/*    object-fit: contain;*/
+/*}*/
+
+
+
