@@ -51,7 +51,7 @@ test("total amount spent on expenses",()=>{
     expect(result).toBe(answer);
 })
 
-test("return studen grades", ()=>{
+test("return student grades", ()=>{
     const studentScores = [95, 78, 85, 60, 45, 92];
     let result = returnStudentGrades(studentScores);
     let answer = ["A","C","B","D","F","A"];
@@ -80,9 +80,6 @@ test("buying patterns of customers",()=>{
         let result = determineBuyingPatterns(orders);
         let answer = [{id: 1, items: [{totalPrice: 95}]}, {id: 2, items: [{totalPrice: 150}]}, {id: 3, items: [{totalPrice: 30}]}];
         expect(result).toEqual(answer);
-
-
-    
-
-
 })
+
+

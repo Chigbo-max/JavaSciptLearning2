@@ -56,7 +56,10 @@ button{
     border-radius: 24px;
     background-color: #2374EE;
     color: #fff;
+<<<<<<< HEAD
     cursor: pointer;
+=======
+>>>>>>> bff9a4d441b3f18ecbb014faa3cf5ce0233330a8
 }
 
 .heroPage{
@@ -94,7 +97,10 @@ button{
     font-size: 64px;
     line-height: 1.1;
     margin-bottom: 20px;
+<<<<<<< HEAD
     color: #063852;
+=======
+>>>>>>> bff9a4d441b3f18ecbb014faa3cf5ce0233330a8
 }
 
 .textContainer h4{
@@ -142,6 +148,7 @@ span{
     transform: translateY(5%);
     /*z-index: 2;*/
 }
+<<<<<<< HEAD
 
 /*.imageContainer img{
     object-fit: contain;
@@ -692,6 +699,11 @@ text-align: center;
 
 
 
+=======
+/*.imageContainer img{*/
+/*    object-fit: contain;*/
+/*}*/
+>>>>>>> bff9a4d441b3f18ecbb014faa3cf5ce0233330a8
 
 
 
