@@ -1,0 +1,697 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.mainWrapper{
+    height:100vh;
+    width:100%;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: poppins sans-serif;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: #F9FAFB;
+
+}
+.mainWrapper::-webkit-scrollbar{
+    display: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.navBar{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    padding: 20px;
+    top:0;
+    left:0;
+    right:0;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #9EA3AE;
+}
+
+button{
+    border: none;
+    width: 134px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: #2374EE;
+    color: #fff;
+    cursor: pointer;
+}
+
+.heroPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: url("./img/Hero Background.svg");
+}
+.heroPage::-webkit-scrollbar{
+    display: none;
+}
+
+
+.heroPage1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1400px;
+}
+
+.textContainer{
+    max-width: 600px;
+}
+.textContainer h1{
+    width: 373px;
+    height: 210px;
+    margin-left: 110px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: #063852;
+}
+
+.textContainer h4{
+    width: 441px;
+    height: 78px;
+    margin-top: 13px;
+    margin-left: 110px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26.1px;
+    color: #9EA3AE;
+    margin-bottom: 20px;
+}
+
+span{
+    color: #2374EE;
+}
+
+.freeTrial{
+    display: flex;
+    align-items: center;
+    width: 600px;
+    height: 58px;
+    margin-left: 110px;
+    margin-top: 13px;
+}
+
+.freeTrial h4{
+    margin-left: 15px;
+    margin-top: 80px;
+}
+
+.material-icons{
+    margin-left: 30px;
+    color: #2374EE;
+    cursor: pointer;
+}
+
+.imageContainer{
+    width:916px;
+    height:651px;
+    margin-top: 159px;
+    border-radius: 16px;
+    color: #F6F6F6;
+    transform: translateY(5%);
+    /*z-index: 2;*/
+}
+
+/*.imageContainer img{
+    object-fit: contain;
+}*/
+
+
+
+.heroPage2{
+    display: flex;
+    width: 100%;
+    height: 413px;
+    margin-top: 200px;
+    margin-left: 150px;
+
+}
+
+.heroPage2 .leftSide{
+    width: 350px;
+    height: 388px;
+    margin-left: 130px;
+}
+
+.heroPage2 .leftSide .inLeftSide{
+    display: flex;
+    flex-direction: row;
+    margin-left: 8px;
+    height: 68px;
+    width: 529px;
+    margin-top: 20px;
+}
+
+.heroPage2 .leftSide h3{
+    color:#063852;
+    font-size: 20px;
+    line-height: 56px;
+}
+
+.heroPage2 .leftSide h2{
+    font-size: 40px;
+    font-weight: 700px;
+
+}
+
+.heroPage2 .leftSide h4{
+    margin-top: 10px;
+    color: #9EA3AE;
+    font-size: 18px;
+    line-height: 26.1px;
+    font-weight: 500;
+}
+
+h7{
+color: #063852;
+
+}
+
+.fa-solid{ 
+font-size: 33px;
+}
+
+.icons{
+    display: flex;
+    width: 120px;
+
+}
+
+.icons .leftSide button{
+    margin-top: 30px;
+}
+
+.icons .inLeftSideText{
+    margin-top: -22px;
+    margin-left: 10px;
+}
+
+.icons .inLeftSideText h3{
+    margin-bottom: -15px;
+    font-weight: 18px;
+    color: #2374EE;
+}
+
+.rightSide{
+    border-radius: 16px;
+    background-color: #D3D5DA;
+    color: #D3D5DA;
+    border-style: solid;
+    width:570px;
+    height: 300px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0 , 0.4);
+    margin-left: 50px;
+}
+
+.heroPage3{
+    width: 100%;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 80px;
+    
+}
+.heroPage3MainText{
+width: 570px; 
+justify-items: center; 
+text-align: center;
+
+}
+
+.inHeroPage3{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 40px;
+    width: 1200px;
+    
+}
+
+.heroPage3 h2{
+    font-size: 40px;
+
+}
+
+.heroPage3 h3{
+    font-size: 32px;
+    margin-top: 22px;
+
+}
+
+
+.heroLink a{
+    display: flex;
+    align-items: center;
+    margin-top: 22px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #2374EE;
+}
+
+.heroLink i{
+    margin-left: 8px;
+    font-size: 18px; 
+}
+
+.heroPage3 p{
+    margin-top: 22px;
+}
+
+.heroPage3 h6{
+    color: #FFB700;
+    cursor: pointer;
+}
+
+.firstHeroPageImage, .thirdHeroPageImage{
+    margin-right: 100px;
+}
+
+.inHeroPage3 .heroPageText{
+    margin-right: 100px;
+}
+
+.heroPage3Bottom{
+    background-color:#2374EE;
+    width: 100%;
+    height: 420px;
+    margin-top: 40px;
+}
+
+.heroPage3Bottom .heroPage3MainText{
+    color: white;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.testimonyContainer{
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    position: relative;
+    align-content: center;
+    margin: auto;
+}
+.testimony{
+    border-radius: 12px;
+    background-color: white;
+    width: 300px;
+    height: 280px;
+    margin-top: 50px;
+    margin-left: 25px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0 , 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+
+.testimonyImage{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #9EA3AE;
+}
+
+.testimonyTextContainer1{
+    text-align: center;
+    width: 250px;
+}
+
+.testimonyTextContainer1 h3{
+    font-size: 20px;
+    color:#063852
+}
+
+.testimonyTextContainer1 h6{
+    color: #9EA3AE;
+    margin-top: 5px;
+}
+
+.testimonyTextContainer1 p{
+    color:#063852;
+    font-size: small;
+}
+
+.nextButton{
+    width: 1025px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    transform:translateY(35%);
+
+    
+}
+.nextButton #left, #right{
+    width:60px;
+    height:60px;
+    background-color: white;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0 , 0.4);
+    border-radius: 50%;
+    margin-bottom: 400px;
+}
+.nextButton #left i{
+    color: #2374EE;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.nextButton #right i{
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.heroPage3 button{
+    margin-top: 120px;
+    box-shadow: 10px 10px 20px rgb(0,0,0,0.4);
+    cursor: pointer;
+    position: relative;
+
+}
+
+.heroPage4{
+    width: 100%;
+    margin: auto;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plansContainer{
+    /* display: flex;
+    justify-content: space-between; */
+    margin-top: 100px;
+    align-items: center;
+    align-content: center;
+    margin-left:50px;
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+    
+}
+
+.plan{
+    width: 250px;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.list{
+    list-style: none;
+    padding-left: 0;
+    flex-direction: column;
+    display:block;
+    margin-top: 10px;
+}
+
+.list li{
+    display: flex;
+    margin-left: -30px;
+}
+
+#price{
+    display: flex;
+    margin-top: 10px;
+}
+
+#price h6{
+    margin-top:10px;
+    margin-left: 2px;
+}
+
+.planTitle{
+    display: flex;
+    margin-left: -25px;
+}
+
+.plan p{
+    margin-top: 10px;
+}
+.iconTitleContainer{
+    background-color: #ECEBFF;
+    border-radius: 16px;
+    width: 45px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+    position: relative;
+}
+
+
+.iconTitleContainer i{
+    font-size: 30px;
+    position: absolute;
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+#titleContainer h3{
+    font-size: px;
+    margin-left: 5px;
+}
+
+#titleContainer h6{
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.plan h6{
+    margin-top: 10px;;
+}
+
+.plan button{
+    width: 180px;
+    height: 40px;
+    margin-top: 20px;
+    box-shadow: 10px 10px 20px rgb(0, 59, 186, 0.767);
+}
+
+.specialPlan{
+    background-color: #2374EE;
+    width: 290px;
+    border-radius: 24px;
+    margin-top: -60px;
+    height: 400px;
+    margin-right: 35px;
+    box-shadow: 10px 10px 20px rgba(0, 59, 186, 0.767);
+}
+
+.specialPlan .plan button{
+    width: 230px;
+    height: 50px;
+    background-color: white;
+    color: #2374EE;
+}
+
+.specialPlan .plan #titleContainer h3, .specialPlan #titleContainer h6, .specialPlan .plan h6, .specialPlan #price h6,.specialPlan .plan p, .specialPlan .list li, .specialPlan #price, .specialPlan .iconContainer .material-icons{
+    color: white;
+}
+
+.footer{
+    width: 100%;
+    background-image: url("./img/Background.svg");
+    background-size: cover;
+    margin-top: 80px;
+    height: 500px;
+    position: relative;
+}
+
+.footerContent{
+    display: flex;
+    max-height: 200px;
+    justify-content: center;
+    width: 700px;
+    margin: auto;
+
+}
+
+.footerTextContainer{
+    margin-top: 60px;
+    margin-left: 60px;
+    width: 400px;
+}
+
+.footerTextContainer h3{
+    font-size: 35px;
+    color: white;
+}
+
+.footerTextContainer p{
+    margin-top: 25px;
+    line-height:1.5;
+    color: white;
+}
+
+.footerTextContainer .freeTrial{
+    margin-top: 40px;
+    margin-left: 3px;
+
+}
+
+.footerTextContainer .material-icons, .footerTextContainer h4{
+    margin-top: -5px;
+    cursor: pointer;
+    color: white;
+}
+
+.footerBar{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    left:0;
+    right:0;
+    bottom: 0;
+    position: absolute;
+}
+
+.footerBar ul li a{
+    width:500px;
+    height: 8px;
+    margin-left: -350px;
+    font-size: small;
+    color: white;
+}
+
+.footerBar ul{
+    margin-right:-400px;
+    
+}
+
+.footerBar .logoContainer p{
+    color:#9EA3AE;
+}
+
+@media only screen and (max-width:600px){
+     .plansContainer{
+     grid-template-columns: 1fr;
+    }
+
+    .heroPage3MainText{
+        width: 70%;
+        margin-bottom:-40px;
+    }
+
+    .plan,.specialPlan{
+        margin-top: 40px;
+    }
+
+    .testimonyContainer{
+        display: flex;
+        flex-direction: column;
+        margin-left: 80px;
+    }
+
+    .nextButton{
+        width: 400px;
+        margin-left: -28px;
+       
+    }
+
+    .heroPage3 button{
+        margin-top: 85px;
+    
+    }
+
+    .heroPage3Bottom{
+        width: 100%;
+        height: 1250px;
+    }
+
+    .inHeroPage3{
+        flex-direction: column;
+
+    }
+
+    .heroPageText{
+        width: 400px;
+        text-align: center;
+        margin-left: 90px;
+    }
+
+    .heroLink a{
+        margin-left:90px;
+    }
+
+    .heroPage2{
+        flex-direction: column;
+        height: auto;
+    margin-top: 200px;
+    margin-left:-30px;
+    }
+
+    .leftSide h2, h4{
+        text-align: center;
+    }
+
+    .leftSide button{
+        margin-left:90px;
+    }
+    
+    .heroPage2, .rightSide{
+        margin-top: 40px;
+        width: 450px;
+     }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
