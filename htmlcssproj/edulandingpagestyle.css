@@ -56,10 +56,7 @@ button{
     border-radius: 24px;
     background-color: #2374EE;
     color: #fff;
-<<<<<<< HEAD
     cursor: pointer;
-=======
->>>>>>> bff9a4d441b3f18ecbb014faa3cf5ce0233330a8
 }
 
 .heroPage{
@@ -97,10 +94,7 @@ button{
     font-size: 64px;
     line-height: 1.1;
     margin-bottom: 20px;
-<<<<<<< HEAD
     color: #063852;
-=======
->>>>>>> bff9a4d441b3f18ecbb014faa3cf5ce0233330a8
 }
 
 .textContainer h4{
@@ -148,7 +142,6 @@ span{
     transform: translateY(5%);
     /*z-index: 2;*/
 }
-<<<<<<< HEAD
 
 /*.imageContainer img{
     object-fit: contain;
@@ -235,10 +228,10 @@ font-size: 33px;
     background-color: #D3D5DA;
     color: #D3D5DA;
     border-style: solid;
-    width:570px;
+    width:500px;
     height: 300px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0 , 0.4);
-    margin-left: 50px;
+    margin-left: 100px;
 }
 
 .heroPage3{
@@ -664,10 +657,10 @@ text-align: center;
     }
 
     .heroPage2{
-        flex-direction: column;
-        height: auto;
+    flex-direction: column;
+    height: auto;
     margin-top: 200px;
-    margin-left:-30px;
+    margin-left:-50px;
     }
 
     .leftSide h2, h4{
@@ -676,34 +669,95 @@ text-align: center;
 
     .leftSide button{
         margin-left:90px;
+        margin-top: -15px;
     }
     
     .heroPage2, .rightSide{
-        margin-top: 40px;
-        width: 450px;
+        width: 415px;
      }
+
+     .heroPage1{
+        flex-direction: column;
+        max-width: 200px;
+     }
+
+     .heroPage1 .textContainer{
+        margin-top: 600px;
+        text-align: center;
+     }
+
+     .heroPage1 .textContainer h4{
+        margin-left: 75px;
+     }
+
+     .imageContainer img{
+        width: 600px;
+        margin-left: 190px;
+        height: 400px;
+     }
+
+     .imageContainer{
+        margin-top: -30px;
+        margin-bottom: 120px;
+     }
+
+     .freeTrial h4, .freeTrial .material-icons{
+        display:  none;
+     }
+
+     .freeTrial{
+        justify-content: center;
+        margin: auto;
+     }
+
+     .footerContent{
+        flex-direction: column;
+        /* padding: 50px; */
+        justify-content: center;
+         
+     }
+
+    .footerImageContainer{
+            margin-top: 550px;   
+        }
+
+        .footerTextContainer{
+            margin-top: -20px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .footerTextContainer .freeTrial{
+            margin-left: -150px;
+        }
+
+     .footer{
+        height: 120vh;
+     }
+  
+     .footerBar{
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+     }
+
+     .logoContainer{
+        display: flex;
+        gap: 20px;
+     }
+
+     .footerBar ul{
+        margin-left: 50px;
+     }
+
+     .footerTextContainer .freeTrial button{
+
+     }
+
 
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
-/*.imageContainer img{*/
-/*    object-fit: contain;*/
-/*}*/
->>>>>>> bff9a4d441b3f18ecbb014faa3cf5ce0233330a8
 
 
 
