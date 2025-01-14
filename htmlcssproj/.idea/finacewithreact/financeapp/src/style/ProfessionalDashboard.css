@@ -1,0 +1,101 @@
+.businessOperations{
+    display: flex;
+    justify-content: space-between;
+    width: 1300px;
+    gap: 15px;
+}
+
+.ProfessionalDashboard .title{
+    width: 1300px;
+    margin-top: 100px;
+
+}
+
+.ProfessionalDashboard .title h1{
+    font-size: 3.8rem;
+}
+
+.ProfessionalDashboard{
+    width: 100%;
+    background-color: #fafafa;
+}
+
+.professionalBodyContainer{
+    width: 1300px;
+    margin: auto;
+}
+
+.professionalBodyContainer .imageContainer img{
+    width: 1300px;
+    height: 600px;
+}
+
+.secondTitle h2{
+text-align: center;
+font-size: 2.8rem;
+font-weight: 800;
+color:#211061;
+}
+
+.secondTitle{
+    margin-top: 100px;
+    width: 1300px;
+}
+
+.buttonContainer{
+    display: flex;
+    flex-direction: column;
+    width: 1300px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.operationsContainer #desc p{
+    color: #5c5a57;
+    font-size: 1.5rem;
+} 
+.operationsContainer #socials{
+    color: #1dcf9f;
+    font-size: 1.5rem;
+}
+
+.operationsContainer{
+    text-align: center;
+    padding: 12px;
+    border-radius: 12px;
+    background-color: white;
+    margin-top: 50px;
+}
+
+#bottom-desc p{
+    color: #5c5a57;
+    margin-top: -50px;
+    font-size: 1.5rem;
+}
+
+#bottom-desc{
+    margin-bottom: 100px;
+}
+
+.thirdTitle h2{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color:#211061;
+    }
+    
+.thirdTitle{
+    width: 1300px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    }
+
+.thirdTitle #desc p{
+    color: #5c5a57;
+    font-size: 1.4rem;
+    text-align: center;
+
+}
+
+

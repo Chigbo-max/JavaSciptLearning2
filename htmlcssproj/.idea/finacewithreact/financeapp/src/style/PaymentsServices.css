@@ -1,0 +1,103 @@
+.terminals{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+
+
+}
+
+.transferNumber{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.businessApp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+
+}
+
+#paymentsImageContainer img{
+    height: 580px;
+    width: 580px;
+}
+
+.paymentChannels{
+    color: #211061;
+    width: 1300px;
+    margin: auto;
+
+}
+
+.paymentServices{
+    width: 100%;
+    height: auto;
+    background-color: #fafafa;
+
+
+}
+
+#paymentChannelsTitle h1{
+    font-size: 3.8rem;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#paymentChannelsTitle{
+    border-bottom: groove black 2px;
+}
+
+.paymentChannels li{
+    color: #1dcf9f;
+    font-size: 2.5rem;
+    line-height: 15px;
+}
+
+.paymentChannels p{
+    color: #3e464f;
+    font-size: 1.3rem;
+
+}
+
+#AppButton img{
+height: 48px;
+width: 165px;
+}
+
+#terminalButton Button{
+    height: 48px;
+    width: 220px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#terminalButton Button h4{
+  font-size: 1.4rem;
+  margin: auto;
+  font-weight: 800;
+}
+
+#paymentsTextContainer h2{
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: -30px;
+}
+
+#paymentsTextContainer h6{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
