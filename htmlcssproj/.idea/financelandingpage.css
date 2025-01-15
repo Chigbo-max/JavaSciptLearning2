@@ -1,0 +1,231 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.mainWrapper{
+    margin: auto;
+    width: 1680px;
+} 
+
+body::-webkit-scrollbar{
+    display: none;
+}
+   
+
+.navBar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    gap: 40px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.dropDown{
+    display: none;
+}
+
+.buttons{
+    width: 200px;
+}
+
+#navButton{
+    margin-left: 40px;
+    cursor: pointer;
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+    color:#282B6D;
+}
+
+.heroPage{
+    display: flex;
+    padding: 80px;
+    justify-content: space-around;
+    align-items: center; 
+
+}
+
+.heroPageCover{
+    background-image: url("/img/Mask\ Group1.svg");
+    background-size: cover;
+
+}
+
+.textContainer{
+    width: 480px;
+    color: #282B6D;
+
+}
+
+.textContainer h2{
+    font-size: 55px;
+    margin-bottom: 20px;
+    line-height: 60px;
+}
+
+p{
+    font-size: 13px;
+}
+
+.heroPageButtons{
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+.heroPageButtons button{
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    padding: auto;
+    background-color: #7b2cbf;
+    color: white;
+    border: none;
+    box-shadow: 10px 10px 10px rgb(0,0,0,0.1);
+
+}
+
+.heroPageButtons #rightButton{
+    background-color: white;
+    color:#7b2cbf;
+    border: none;
+
+}
+
+.imageBox{
+    background-color: grey;
+    width: 680px;
+    height: 320px;
+}
+
+span{
+    color: #7b2cbf;
+    text-decoration: underline 2px;
+}
+
+.secondHeroPage .firstHeader{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    color:#282B6D;
+}
+
+h3{
+    color:#282B6D;
+}
+
+.secondHeroPage .firstHeader h3{
+   font-size: 1.8rem;
+   margin-bottom: 20px;
+}
+
+.secondHeroPage .firstHeader h5{
+    margin-bottom: 20px;
+}
+
+h5{
+    color: #FE9168;
+}
+
+.blocks{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+
+}
+
+.blocks .smallBlock{
+    background-color: grey;
+    height: 35px;
+    width: 195px;
+}
+
+.thirdHeroPage{
+    padding: 110px;
+}
+
+.leftTextContainer{
+    width: 350px;
+}
+
+
+.leftTextContainer h3{
+    font-size: 1.8rem;
+}
+
+.contentBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    
+}
+
+.contentBox #contentContainer{
+    height: 375px;
+    width: 365px;
+    background-color: #E2EAF4;
+    border-radius: 12px;
+}
+
+#iconBox{
+    background-color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 16px;
+    margin: 30px;
+}
+
+#iconBox i{
+    font-size: 25px;
+    color: #FE9168;
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+#contentContainer .textContainer{
+    width: 300px;
+    margin: 30px;
+}
+
+#contentContainer .textContainer h4{
+    font-size: 1.5rem;
+}
+
+#contentContainer .textContainer p{
+  margin-top: 20px;
+  line-height: 25px;
+  font-size: 1.2rem;
+  color:#9AA5B6;
+}
+
+#contentContainer .textContainer h6{
+    margin-top: 20px;
+    font-size: 1.3rem;
+}
+
+
+

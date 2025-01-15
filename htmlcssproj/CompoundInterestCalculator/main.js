@@ -19,8 +19,9 @@ form.addEventListener("submit", (event)=>{
     let totalAmount = compoundInterest + contributionCompoundInterest;
     let interest = totalAmount - principal;
 
-    result.innerHTML = `<p> After ${time}years, The principal of $${principal.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")} will grow to $${(totalAmount.toFixed(2)).replace(/\B(?=(\d{3})+(?!\d))/g, ",")},</p>
-    <p>with an interest of $${interest.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</P>`;
+
+    result.innerHTML = `<p> After ${time}years, The principal of NGN${principal.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")} will grow to NGN${(totalAmount.toFixed(2)).replace(/\B(?=(\d{3})+(?!\d))/g, ",")},</p>
+    <p>with an interest of NGN${interest.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</P>`;
     
 
 })

@@ -1,95 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Compound Interest Calculator</title>
-    <link rel="stylesheet" href="./compoundinterest.css">
+    <link rel="stylesheet" href="./compoundinterest.css" />
     <script src="./main.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="mainWrapper">
-        <form id="calculator-form">
-            <div class="header">
-                <h4>Step 1: Initial Investment</h4>
-            </div>
-            <div class="fields">
-                <div class="textContainer">
-                    <label for="initialInvestment">Initial Investment<span>*</span></label>
-                    <h5>Amount of money that you have available to invest initially</h5>
-                </div>
-                <input type="number" id="initialInvestment" name="initialInvestment" required />
-            </div>
+      <form id="calculator-form">
+        <div class="header">
+          <h4>Step 1: Initial Investment</h4>
+        </div>
+        <div class="fields">
+          <div class="textContainer">
+            <label for="initialInvestment"
+              >Initial Investment<span>*</span></label
+            >
+            <h5>Amount of money that you have available to invest initially</h5>
+          </div>
+          <input
+            type="number"
+            id="initialInvestment"
+            name="initialInvestment"
+            required
+          />
+        </div>
 
-            <div class="header">
-                <h4>Step 2: Contribute</h4>
-            </div>
-            <div class="fields">
-                <div class="textContainer">
-                    <label for="monthlyContribution">Monthly Contribution</label>
-                    <h5>Amount that you plan to add to the principal every month, or a negative number for the amount
-                        that you plan to withdraw every month.</h5>
-                </div>
-                <input type="number" id="monthlyContribution" name="monthlyContribution" />
-            </div>
+        <div class="header">
+          <h4>Step 2: Contribute</h4>
+        </div>
+        <div class="fields">
+          <div class="textContainer">
+            <label for="monthlyContribution">Monthly Contribution</label>
+            <h5>
+              Amount that you plan to add to the principal every month, or a
+              negative number for the amount that you plan to withdraw every
+              month.
+            </h5>
+          </div>
+          <input
+            type="number"
+            id="monthlyContribution"
+            name="monthlyContribution"
+          />
+        </div>
 
-            <div class="line"></div>
-            <div class="fields">
-                <div class="textContainer">
-                    <label for="time">Length of Time in Years<span>*</span></label>
-                    <h5>Length of time, in years, that you plan to save.</h5>
-                </div>
-                <input type="number" id="time" name="time" required />
-            </div>
+        <div class="line"></div>
+        <div class="fields">
+          <div class="textContainer">
+            <label for="time">Length of Time in Years<span>*</span></label>
+            <h5>Length of time, in years, that you plan to save.</h5>
+          </div>
+          <input type="number" id="time" name="time" required />
+        </div>
 
-            <div class="header">
-                <h4>Step 3: Interest Rate</h4>
-            </div>
-            <div class="fields">
-                <div class="textContainer">
-                    <label for="interestRate">Estimated Interest Rate<span>*</span></label>
-                    <h5>Your estimated annual interest rate</h5>
-                </div>
-                <input type="number" id="interestRate" name="interestRate" required />
-            </div>
+        <div class="header">
+          <h4>Step 3: Interest Rate</h4>
+        </div>
+        <div class="fields">
+          <div class="textContainer">
+            <label for="interestRate"
+              >Estimated Interest Rate<span>*</span></label
+            >
+            <h5>Your estimated annual interest rate</h5>
+          </div>
+          <input type="number" id="interestRate" name="interestRate" required />
+        </div>
 
-            <div class="line"></div>
-            <div class="fields">
-                <div class="textContainer">
-                    <label for="interestVarianceRange">Interest rate variance range</label>
-                    <h5>Range of interest rates (above and below the rate set above) that you desire to see results for.
-                    </h5>
-                </div>
-                <input type="number" id="interestVarianceRange" name="interestVarianceRange" />
-            </div>
+        <div class="line"></div>
+        <div class="fields">
+          <div class="textContainer">
+            <label for="interestVarianceRange"
+              >Interest rate variance range</label
+            >
+            <h5>
+              Range of interest rates (above and below the rate set above) that
+              you desire to see results for.
+            </h5>
+          </div>
+          <input
+            type="number"
+            id="interestVarianceRange"
+            name="interestVarianceRange"
+          />
+        </div>
 
-            <div class="header">
-                <h4>Step 4: Compound It</h4>
-            </div>
-            <div class="fields">
-                <div class="textContainer">
-                    <label for="compoundFrequency">Compound Frequency</label>
-                    <h5>Times per year that interest will be compounded</h5>
-                </div>
-                <select name="compoundFrequency" id="compoundFrequency">
-                    <option value="365">Daily</option>
-                    <option value="52">Weekly</option>
-                    <option value="12">Monthly</option>
-                </select>
-            </div>
-            <div class="line"></div>
-            <div class="buttons">
-                <div id="result"></div>
-                <button id = "firstButton" type="submit">CALCULATE</button>
-                <button id = "secondButton" onclick="resetCalculator()">RESET</button>
-            </div>
-
-
-        </form>
+        <div class="header">
+          <h4>Step 4: Compound It</h4>
+        </div>
+        <div class="fields">
+          <div class="textContainer">
+            <label for="compoundFrequency">Compound Frequency</label>
+            <h5>Times per year that interest will be compounded</h5>
+          </div>
+          <select name="compoundFrequency" id="compoundFrequency">
+            <option value="365">Daily</option>
+            <option value="52">Weekly</option>
+            <option value="12">Monthly</option>
+          </select>
+        </div>
+        <div class="line"></div>
+        <div class="buttons">
+          <div id="result"></div>
+          <button id="firstButton" type="submit">CALCULATE</button>
+          <button id="secondButton" onclick="resetCalculator()">RESET</button>
+        </div>
+      </form>
     </div>
-
-</body>
-
+  </body>
 </html>
