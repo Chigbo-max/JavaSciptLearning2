@@ -1,0 +1,21 @@
+.plusButton{
+    display: flex;
+    margin: 5px;
+    width: 40px;
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.plusButton:active{
+    color: red;
+}
+
+.plusButton:hover{
+    transition: o.3s ease-in-out;
+    box-shadow: 0px 4px 8px 0px rgba(117, 117, 117, 0.2);
+}

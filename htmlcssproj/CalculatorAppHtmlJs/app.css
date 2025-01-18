@@ -1,0 +1,45 @@
+
+body{
+    background-color: #bfecf2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.mainWrapper{
+    background-color: #1b1b29;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding: 10px;
+}
+
+.classButtons{
+    display:flex;
+    align-items: center;
+    font-size: 24px;
+}
+
+.plusButton #plus{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 84px;
+    margin-top: -42px;
+}
+
+.classButtons Button{
+    width: 42px;
+    height:42px;
+    margin: 2px;
+}
+
+input{
+    height: 2.5em;
+    width: 13.2em;
+    text-align: right;
+}
