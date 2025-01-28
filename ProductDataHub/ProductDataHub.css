@@ -1,3 +1,9 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 *{
     border: 0;
     margin: 0;
@@ -5,12 +11,22 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v29/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  
+}
+
 .navBar{
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 10px;
-    ;
+    
 }
 
 .navBar span{
@@ -28,7 +44,7 @@ ul li{
 
 li h5{
     margin-right: 10px;
-    size:5px
+    font-size: .6rem;
 }
 
 
@@ -142,16 +158,17 @@ button{
     }
 
     .textContent h3{
-        font-size: 1rem;
+        font-size: 0.8rem;
         margin-bottom: 10px;
     }
 
     .textContent h5{
         margin-bottom: 10px;
+        font-size: 0.6rem;
     }
 
     .textContent p{
-        font-size: 0.8rem;
+        font-size: 0.5rem;
     }
 
     

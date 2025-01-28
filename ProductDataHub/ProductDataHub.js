@@ -1,4 +1,4 @@
-const source = `https://fakestoreapi.com/products`
+// const source = `https://fakestoreapi.com/products`
 const getProduct = async(url) =>{
     try{
         const response = await fetch(url);
@@ -64,7 +64,7 @@ const reduceDescription =(description)=>{
                 <img src="${image}" alt="product" />
           <div class="textContent">
             <h3>${title}</h3>
-            <h5>${price}</h5>
+            <h5>$${price}</h5>
             <p>${reduceDescription(description)}</p>
             <button>ADD TO CART</button>
             </div>

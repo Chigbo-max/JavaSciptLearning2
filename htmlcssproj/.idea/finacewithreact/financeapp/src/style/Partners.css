@@ -1,0 +1,56 @@
+.logoContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1300px;
+    height: 124px;
+    justify-content: space-between;
+}
+
+.logoContainer img{
+    height: 124px;
+    width: 124px;
+}
+
+.title h1{
+    font-size: 4rem;
+    font-weight: 800;
+    color: #211061;
+    text-align: center;
+}
+
+.title{
+    margin-bottom: 100px;
+    width: 1200px;
+    height: 168px;
+}
+
+span{
+    color: #1dcf9f;
+}
+
+.partners{
+    margin-top: 25px;
+    width: 1300px;
+    margin-bottom: 40px;
+}
+
+
+.secondLogoContainer{
+    display: flex;
+    justify-content: space-between;
+    height: 51px;
+    width: 1300px;
+}
+
+.secondLogoContainer img{
+    height: 51px;
+    width: 116px;
+}
+
+.secondLogoContainer h6{
+    font-size: 1.8rem;
+    margin-top: 10px;
+    color:#211061;
+    margin-left: -40px;
+
+}

@@ -4,7 +4,6 @@
 }
 
 
-
 *{
     margin:0;
     padding:0;
@@ -296,7 +295,7 @@ form{
 }
 
 .navBarLine{
-    width: 1380px;
+    width: 1370px;
     border-style: solid;
     border-width: 1px;
     color: #C9C9C9;

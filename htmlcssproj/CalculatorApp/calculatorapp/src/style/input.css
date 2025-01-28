@@ -1,0 +1,11 @@
+.inputWrapper{
+    height: 10em;
+    text-align: right;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
