@@ -1,0 +1,195 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Neue';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/comicneue/v8/4UaFrEJDsxBrF37olUeD96_Z5btx.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+}
+
+#listWrapper ul li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: white;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 25px;
+    padding: 10px;
+    margin-bottom: 10px;
+    visibility: visible;
+    position: relative;
+    width: 300px;
+}
+
+#listWrapper ul li.hidden{
+    visibility: hidden;
+}
+
+
+#listWrapper{
+    margin-top: 20px;
+    padding: 50px;
+    border-radius: 20px;
+    border-style:solid;
+    border-width: 3px;
+    overflow-y: scroll;
+}
+
+#listWrapper::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+.mainWrapper{
+    max-width: 500px;
+    height: 100vh;
+    background-color: #010521;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.material-icons{
+    cursor: pointer;
+    color: #FF5000;
+    position: absolute;
+    right: 0;
+    padding: 20px;
+}
+
+.material-icons:hover{
+color: #fff;
+   transition: 2ms ease in ease outbb hhh;
+}
+
+
+
+input[type="checkbox"]{
+   accent-color: #FF5000;
+   font-size: 1.3rem;
+   size: 100px;
+   border-radius: 50%;
+   appearance: none;
+   background-color: #ffff;
+   border: 2px solid #010521;
+   height: 20px;
+   width: 20px;
+   cursor: pointer;
+}
+input[type="checkbox"]:checked{
+    background-color: #FF5000;
+    border-color: #fff;
+
+}
+
+input[type="checkbox"]:checked + .listItem{
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.lineThrough{
+    text-decoration: line-through;
+    color: #aaa; 
+}
+
+
+input[type="checkbox"]:hover{
+    border-color: #0974ffd5;
+}
+
+
+
+#leftList{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+#addButton{
+    background-color: #FF5000;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#addButton:hover{
+    background-color: white;
+    color: #FF5000; 
+}
+
+#addBar #addInputField{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    
+}
+#addBar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    
+}
+
+#searchField{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    border-style: solid;
+    border-color: #FF5000;
+}
+
+.header{
+    font-size: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#searchField:focus{
+   outline: none;
+}
+
+#addInputField:focus{
+    outline:none;
+}
+
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List App</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="ToDoList.css" />
+    <script src="ToDoList.js" defer></script>
+  </head>
+  <body>
+    <div class="mainWrapper">
+      <div class="header">
+        <h1>To Do List</h1>
+        <form id="searchForm">
+          <input type="text" id="searchField" placeholder="search..."  />
+        </form>
+      </div>
+
+      <div id="listWrapper">
+        <ul id="toDoList">
+          <li>
+            <div id="leftList">
+              <input id="check" type="checkbox"/>
+              <span class="listItem" >Go to the gym</span>
+            </div>
+            <i class="material-icons">delete_sweep</i>
+          </li>
+          <!-- <li>
+            <div id="leftList">
+              <input id="check" type="checkbox"/>
+              <span class="listItem" for = "check">Go to the gym</span>
+            </div>
+            <i class="material-icons">delete_sweep</i>
+          </li>
+          <li>
+            <div id="leftList">
+              <input id="check" type="checkbox" />
+              <span class="listItem" for ="check">Go to the gym</span>
+            </div>
+            <i class="material-icons">delete_sweep</i>
+          </li> -->
+        </ul>
+      </div>
+      <form id="addBar">
+        <input
+          type="text"
+          id="addInputField"
+          placeholder="Add a new task... characters less than 25 only"
+          maxlength = "24"/>
+        <button id="addButton">Add</button>
+      </form>
+    </div>
+  </body>
+</html>
