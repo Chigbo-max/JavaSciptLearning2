@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <title>Product Data Hub</title>
+    <link rel="stylesheet" href="ProductDataHub.css" />
+    <script src="ProductDataHub.js" defer></script>
+  </head>
+  <body>
+    <div class="mainWrapper">
+      <div class="navBar">
+        <span>LOGO</span>
+        <div id="input_box">
+          <span class="material-icons">search</span>
+          <input type="text" id="searchField" placeholder="search categories" />
+          <button>SEARCH</button>
+        </div>
+        <ul>
+          <li>
+            <div class="material-icons">account_circle</div>
+            <h5>Account</h5>
+          </li>
+          <li>
+            <div class="material-icons">help</div>
+            <h5>Help</h5>
+          </li>
+          <li>
+            <div class="material-icons">shopping_cart</div>
+            <h5>Shopping Cart</h5>
+          </li>
+        </ul>
+      </div>
+      <div class="categories">
+        <h6>electronics <span>&gt;</span>jewelery <span>&gt;</span>men's clothing <span> &gt;</span> women's clothing</h6>
+      </div>
+      <div class="productContainer"></div>
+    </div>
+  </body>
+</html>
